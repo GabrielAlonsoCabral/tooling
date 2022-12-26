@@ -2,10 +2,15 @@ FROM node:16-slim
 
 WORKDIR /src
 
-COPY package.json package-lock.json /src/
+#NPM
+#COPY package.json package-lock.json /src/
+COPY package.json yarn.lock /src/
 
-RUN npm ci --silent
+#NPM
+#RUN npm ci --silent
+RUN yarn  --frozen-lockfile
+
 
 COPY . .
 
-CMD npm start
+CMD yarn start

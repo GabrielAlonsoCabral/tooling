@@ -4,6 +4,9 @@ Simple application to list all S3 Buckets in an AWS Profile.
 This application has as goal integrate Docker, DockerCompose, Jest, LocalStack and Serverless Framework. 
 
 
+  Developed by: <a href="https://www.github.com/gabrielAlonsoCabral">@GabrielAlonsoCabral</a>  
+  <br/>
+
 ### Install
 
 ```
